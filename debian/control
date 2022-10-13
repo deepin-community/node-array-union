@@ -1,0 +1,30 @@
+Source: node-array-union
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>,
+           Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 12),
+ nodejs,
+ mocha,
+ pkg-js-tools (>= 0.8.11)
+Standards-Version: 4.4.1
+Homepage: https://github.com/sindresorhus/array-union
+Vcs-Git: https://salsa.debian.org/js-team/node-array-union.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-array-union
+Rules-Requires-Root: no
+
+Package: node-array-union
+Architecture: all
+Depends:
+ ${misc:Depends},
+ nodejs,
+ node-array-uniq
+Description: Create an array of unique values, in order, from the input arrays
+ array-union creates an array of unique values, in order, from the input
+ arrays.
+ For usage, include `const arrayUnion = require('array-union');`
+ .
+ Node.js is an event-based server-side JavaScript engine.

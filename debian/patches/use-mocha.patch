@@ -1,0 +1,25 @@
+Description: Use mocha for upstream tests.
+ To test the upstream tests, we do not have ava and xo packaged.
+ Hence, using mocha for the same.
+Author: Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2019-03-22
+
+--- a/test.js
++++ b/test.js
+@@ -1,8 +1,8 @@
+-import test from 'ava';
+-import arrayUnion from '.';
++var assert = require('assert');
++var m = require('.');
+ 
+-test('main', t => {
+-	t.deepEqual(arrayUnion([1, 2, 2, 3, 1, 2, 4], [1, 2, 3, 6, 7]), [1, 2, 3, 4, 6, 7]);
+-	t.deepEqual(arrayUnion([1, 2, 2, 3, 1, 2, 4], ['c', 'a', 'd']), [1, 2, 3, 4, 'c', 'a', 'd']);
+-	t.deepEqual(arrayUnion(['a', 'a', 'b', 'a'], ['c', 'a', 'd']), ['a', 'b', 'c', 'd']);
++test('main', function() {
++	assert(m([1, 2, 2, 3, 1, 2, 4], [1, 2, 3, 6, 7]), [1, 2, 3, 4, 6, 7]);
++	assert(m([1, 2, 2, 3, 1, 2, 4], ['c', 'a', 'd']), [1, 2, 3, 4, 'c', 'a', 'd']);
++	assert(m(['a', 'a', 'b', 'a'], ['c', 'a', 'd']), ['a', 'b', 'c', 'd']);
+ });

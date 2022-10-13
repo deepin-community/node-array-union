@@ -1,0 +1,37 @@
+node-array-union (2.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Add debian/gbp.conf
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * New upstream version 2.1.0. This adds index.d.ts
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 28 Oct 2019 13:23:37 +0100
+
+node-array-union (2.0.0-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.4.0 and debhelper to 12
+  * Switch install to pkg-js-tools
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sun, 11 Aug 2019 18:52:06 +0530
+
+node-array-union (2.0.0-1) experimental; urgency=medium
+
+  * New upstream version 2.0.0
+  * Bump Standards-Version to 4.3.0
+  * Bump debhelper compatibility level to 11
+  * Switch test to pkg-js-tools
+  * Add patch to use mocha
+  * Add d/upstream/metadata
+  * Add myself as an uploader
+  * Update d/copyright
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Fri, 22 Mar 2019 10:08:32 +0530
+
+node-array-union (1.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #843066)
+
+ -- Sruthi Chandran <srud@disroot.org>  Thu, 03 Nov 2016 21:40:18 +0530
